@@ -14,8 +14,8 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-				<button id="para" onClick={this.handleClick}>Click</button>
-					<p>{this.state.para}</p>
+				<button id="click" onClick={this.handleClick}>Click</button>
+					{this.state.para != "" ? <p id="para">{this.state.para}</p> : null}
     		</div>
     	);
     }
